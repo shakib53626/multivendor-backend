@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->string('image')->nullable();
             $table->string('banner')->nullable();
-            $table->string('shop-name')->nullable();
+            $table->string('shop_name')->nullable();
             $table->string('slug')->nullable();
             $table->text('address')->nullable();
             $table->timestamp('email_verified_at')->nullable();

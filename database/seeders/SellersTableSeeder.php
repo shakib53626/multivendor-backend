@@ -18,6 +18,7 @@ class SellersTableSeeder extends Seeder
             'name' => 'Seller',
             'email' => 'seller@gmail.com',
             'phone' => '01784801668',
+            'shop_name' => 'Grahok Shop',
             'password' => Hash::make('password'),
         ]);
     }

@@ -29,7 +29,7 @@ class ProductFactory extends Factory
             'name' => $this->faker->name(),
             'slug' => $this->faker->unique()->slug(),
             'thumbnail' => $this->faker->imageUrl('450', '450'),
-            'images' => implode(',', $multiImage), // Convert the array to a comma-separated string
+            'images' => $this->faker->randomElement([$multiImage]), // Convert the array to a comma-separated string
             'price' => $this->faker->numberBetween(800, 3000),
             'discount' => $this->faker->numberBetween(0, 99),
             'stock' => $this->faker->numberBetween(100, 300),
